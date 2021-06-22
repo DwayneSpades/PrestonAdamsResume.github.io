@@ -116,7 +116,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: black;
+		color: #888;
 		font-weight: 300;
 		font-size: 13pt;
 	}
@@ -218,6 +218,7 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
+		color: black;
 	}
 
 	header {

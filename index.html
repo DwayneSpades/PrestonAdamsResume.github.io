@@ -61,7 +61,7 @@
 
 							<h2>EDUCATION</h2>
 							<div class="">
-								DePaul University, Chicago IL — Computer Science:
+								DePaul University, Chicago IL — Bachelors in Computer Science:
 							</div>
 
 							<div class="">
@@ -69,11 +69,7 @@
 							</div>
 
 							<div class="">
-								Expected graduation in 2021
-							</div>
-
-							<div class="">
-								Currently a Senior in the Computer Science Degree
+								Graduated June 11th, 2021
 							</div>
 						</div>
 					</div>
@@ -85,7 +81,7 @@
 				<div class="container">
 					<header>
 						<h2>I have programming experienced with</h2>
-						<p>C, C++, C#, Lua </p>
+						<p>C, C++, C#, Lua, Python, Java </p>
 						<a href="Preston AdamsResume2020Summer.pdf"target="_blank" class="button large scrolly">My Resume</a>\
 						<a href="https://github.com/DwayneSpades"target="_blank" class="button large scrolly">My Github</a>
 						<a href="https://dwaynedev.itch.io/"target="_blank" class="button large scrolly">My Itch.io</a>\
@@ -97,69 +93,84 @@
 						<article id="portfolio" class="wrapper style3">
 							<div class="container">
 								<header>
-									<h2>Games I Developed Solo</h2>
+									<h2>Game Projects I've Worked On</h2>
 									<p>The best of my best.</p>
 								</header>
 								<span>
+
+									<div class="row">
+										<iframe frameborder="0" src="https://itch.io/embed/450902" width="552" height="167">
+										<a href="https://dwaynedev.itch.io/bat-outta-hell">Hex Before Christmas by Dwayne Dev</a></iframe>
+										<p> I was the programmer for our team, the game was made in Unity with C#.
+											Our Game Ranked 11th out of 108 entries.
+											You can play the game from your web browser: https://dwaynedev.itch.io/bat-outta-hell
+ 										</p>
+									</div>
+
 									<div class="row">
 										<iframe frameborder="0" src="https://itch.io/embed/543723?linkback=true&amp;border_width=0&amp;link_color=fa5f5b" width="550" height="165">
 										<a href="https://dwaynedev.itch.io/3d-projection-demo-love2d">3D Projection Demo (Love2D) by Dwayne Dev</a></iframe>
 
-										<p>A simple 3D Engine made in Love 2D from scratch with matrices, points, and multiplication.
+										<p>A simple 3D Engine written in Lua with the Love 2D framework.
+											I had to write 'object classes' for: Matrices and Vectors
 
-											I was developing this to add 3D backgrounds to my other game project Gunner Zed:
+											Implimented Matrix and Vect math functions to support drawing and transforming 3D shapes into the NDC with a perspective matrix.
 
-											Supported features
+											Implimented 3D transformation, rotation, and scaling in world space.
 
-											parsing of .obj files,
+											I was developing this to add 3D background elements for my game project, Gunner Zed
 
-											Manual translation, manual rotation,
+											Supported features:
+
+											loading 3D models via parsing of .obj files,
+
+											A Model veiwer mode with manual translation and manual rotation with button keys,
 
 											Z-depth sorting for tris,
 
 											UV textures,
 
-											Simple lighting</p>
+											Simple lighting
+										</p>
 									</div>
 
 									<div class="row">
 										<iframe frameborder="0" src="https://itch.io/embed/454317" width="552" height="167">
 										<a href="https://dwaynedev.itch.io/gunnier-zed">Gunner Zed (Pico 8 Prototype) by Dwayne Dev</a></iframe>
-										<p>A prototype made in a week to explore mechanics for shoot-em-up games.
-											Pico 8 is a "fantasy Concole" that puts limitations on how much code can be written to it.
-											It acts like a game framework except art and sounds can be made within the application.
-											Everything else is up to the developer to impliment.
-											I wrote simple AABB and sphere colision, a simple array based level editor interface, and visual effects.
-											One cool feature added to one of the player ships was a homing attack.
-											Using lerp and a distance calculations the bullets search for the nearest enemy and can even split into different streams to target
-											multiple enemies at the same time. I observed gameplay from Touhou: EOSD of a player character that has a similar homing attack as a reference to recreate the effect.</p>
+										<p>A game prototype made with Lua in Pico 8 to experiment with designing code architecture for shoot-em-up games.
+										  I had to write the gameplay systems from scratch.
+
+											I wrote a 2D colision system for detecting intersections between AABB and circle collision volumes,
+
+											a simple level editor interface that uses arrays of enemy ID integers to create levels,
+
+											and a system for customizing back ground visuals for the levels.
+
+											One cool gameplay feature added to one of the playable ships was a homing attack shot type.
+											Using linear-interpolation a distance calculations between the
+											player bullets and list of active enemies the bullets will travel to the nearest enemy.
+
+											The bullets can even split into different streams to target
+											multiple enemies at the same time.
+										</p>
 									</div>
 
 									<div class="row">
 										<iframe frameborder="0" src="https://itch.io/embed/454344" width="552" height="167">
 										<a href="https://dwaynedev.itch.io/jumper">Jumper by Dwayne Dev</a></iframe>
-										<p>I had to write the tile collision system, player controls, and timer.
- 											The level used in this game was made using a level editor i wrote in Love 2D.
- 											Check out the level editor here: <a href="#"></a>.</p>
+										<p>I had to write the 2D tile collision system, player controls, and in-game timer.
+ 											The level used in this game was made using an external level editor I wrote using the Love 2D Frame work.
+											<a href="https://github.com/DwayneSpades/Playable-2D-Level-Editor">Love 2D level Editor</a>
+										</p>
 									</div>
 
 									<div class="row">
-										<iframe frameborder="0" src="https://itch.io/embed/615107" width="552" height="167">
+										<iframe frameborder="0" src="https://itch.io/embed/854812" width="552" height="167">
 										<a href="https://dwaynedev.itch.io/puzzle-dungeon">Puzzle Dungeon by Dwayne Dev</a></iframe>
 										<p>Simple player controls were made while taking reference from: <a href="https://catlikecoding.com/unity/tutorials/movement/physics/"></a>
 											Wrote a small puzzle challenge using a simple linked list and c# delegates.
 											Timer was written to facilitate how long a game session would last.
 											Portals were designed to help players keep their momentum and score points faster</p>
-									</div>
-
-									<div class="row">
-										<iframe frameborder="0" src="https://itch.io/embed/450902" width="552" height="167">
-										<a href="https://dwaynedev.itch.io/hex-before-christmas">Hex Before Christmas by Dwayne Dev</a></iframe>
-										<p>This was made for a Game Jam.
-											My goal while developing this game was to add polish by supporting basic features
-											like changing music and sfx volume,
-											streamlining UI and player inputs,
-											polishing the presentation of the game. </p>
 									</div>
 
 								</span>
@@ -170,7 +181,7 @@
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="https://dwaynedev.itch.io/3d-projection-demo-love2d/devlog/119600/improvements-and-optimizations-to-3d-engine" target="_blank" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="https://dwaynedev.itch.io/3d-projection-demo-love2d/devlog/119600/improvements-and-optimizations-to-3d-engine" target="_blank" class="image featured"><img src="images/codeIMG.jpg" alt="" /></a>
 								<h3><a href="#" target="_blank">Added features and Optimizations to 3D Engine Demo</a></h3>
 								<p>Developer Entry.</p>
 							</article>
@@ -178,7 +189,7 @@
 
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="https://dwaynedev.itch.io/3d-projection-demo-love2d/devlog/160325/lighting-implimented" target="_blank" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="https://dwaynedev.itch.io/3d-projection-demo-love2d/devlog/160325/lighting-implimented" target="_blank" class="image featured"><img src="images/codeIMG.jpg" alt="" /></a>
 								<h3><a href="#" target="_blank">Simple Lightinga added to 3D Engine Demo</a></h3>
 								<p>Developer Entry.</p>
 							</article>
@@ -186,7 +197,7 @@
 
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="https://dwaynedev.itch.io/hex-before-christmas/devlog/91551/hex-before-christmas-final-update-optimizations" target="_blank" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="https://dwaynedev.itch.io/hex-before-christmas/devlog/91551/hex-before-christmas-final-update-optimizations" target="_blank" class="image featured"><img src="images/codeIMG.jpg" alt="" /></a>
 								<h3><a href="#" target="_blank">Hex Before Christmas: Optimizations</a></h3>
 								<p>Developer Entry.</p>
 							</article>
@@ -201,12 +212,9 @@
 				</article>
 
 				<article id="contact">
-
-
 					<h2>Contact Info</h2>
 						<div class="em">
 							<p>Email: dwaynespades@gmail.com</p>
-
 						</div>
 					</div>
 

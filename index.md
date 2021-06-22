@@ -206,7 +206,7 @@
 					<h2>Contact Info</h2>
 						<div class="em">
 							<p>Email: dwaynespades@gmail.com</p>
-							
+
 						</div>
 					</div>
 
